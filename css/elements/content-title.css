@@ -1,0 +1,14 @@
+.content-title {
+    padding: 1em 0 1.5em 0;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--lightgray);
+    font-family: "Poiret One",Helvetica,sans-serif;
+}
+
+@media (max-width: 1440px) {
+    .content-title {
+        padding: 0.5em 0 1.5em 0;
+    }
+}

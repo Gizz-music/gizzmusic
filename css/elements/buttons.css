@@ -1,0 +1,108 @@
+.menu-navigation__button {
+    width: 15.5em;
+    height: 1em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Century Gothic",Helvetica,sans-serif;
+    box-shadow: 0.1em 0.2em 0.8em var(--black);
+    color: var(--white);
+    background-color: var(--black) ;
+}
+
+@media (max-width: 414px) {
+    .menu-navigation__button {
+        font-size: 1rem;
+    }
+}
+
+.menu-navigation__button:hover {
+    background-color: var(--lightgray);
+    color: var(--black);
+    transform: translateY(-1em) scale(1.1,1.1);
+    transition: 1s;
+    box-shadow: 0 0.8em 0.8em var(--gray);
+}
+
+.menu-navigation__button:active {
+    background-color: var(--gray);
+    color: var(--lightgray);
+}
+
+.button-back {
+    padding: 0 0 2em 0;
+}
+
+@media (max-width: 768px) {
+    .button-back {
+        padding: 2em 0 3em 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .button-back {
+        padding: 2em 0 3em 4em;
+    }
+}
+
+@media (max-width: 375px) {
+    .button-back {
+        padding: 2em 0 3em 2.7em;
+    }
+}
+
+@media (max-width: 360px) {
+    .button-back {
+        padding: 2em 0 3em 2.4em;
+    }
+}
+
+.button-up {
+    padding: 4em 0 5em 0;
+}
+
+.button-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.button-back__return-input, .button-up__link_up {
+    padding: 1em 5em 1em 5em;
+    color: var(--black);
+    border: 1px solid var(--lightgray);
+    text-align: center;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1rem;
+    font-family: "Century Gothic",Helvetica,sans-serif;
+    box-shadow: 0.3em 0.3em 1em var(--gray);
+}
+
+.button-back__return-input:hover, .button-up__link_up:hover {
+    color: var(--white);
+    background-color: var(--black);
+    transition: background 1s ease;
+    opacity: 0.8;
+}
+
+.button-back__return-input:active, .button-up__link_up:active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.button-back__return-input:before {
+    content:"\2190";
+    padding-right: 0.3em ;
+}
+
+.button-up__link_up:before {
+    content:"\2191";
+    padding-right: 0.3em ;
+}
+

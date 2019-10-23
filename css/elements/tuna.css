@@ -1,0 +1,38 @@
+.cat__animation {
+    animation: walk-cycle 1s steps(12) infinite;
+    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat;
+    height: 12.5rem;
+    width: 25em;
+    position: relative;
+    top: -4rem;
+    left: 90rem;
+    transition: 3s linear;
+}
+
+@media (max-width: 1440px) {
+    .cat__animation {
+        left: 60em;
+    }
+}
+
+@media (max-width: 1280px) {
+    .cat__animation {
+        left: 50em;
+    }
+}
+@media (max-width: 1210px) {
+    .cat__animation {
+        display: none;
+    }
+}
+
+.cat__animation:hover {
+    transform: translateX(-90rem);
+    transition: 3s linear;
+}
+
+@keyframes walk-cycle {
+    0% {background-position: 0 0; }
+    100% {background-position: 0 -150rem; }
+}
+

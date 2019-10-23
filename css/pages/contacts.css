@@ -1,0 +1,40 @@
+.content-container {
+    background: var(--rgba-black);
+}
+
+.contacts {
+    font-size: 1.5rem;
+    padding: 2em 5em 3em 5em;
+    text-transform: uppercase;
+    font-family: "Century Gothic",Helvetica,sans-serif;
+    color: var(--white);
+
+}
+
+@media (max-width: 414px) {
+    .contacts {
+        font-size: 1rem;
+        padding: 0 2em 3em 2em;
+    }
+}
+
+.contacts-mail {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contacts-mail:hover {
+    text-decoration: none;
+    color: var(--silver);
+}
+
+.contacts-mail:active {
+    text-decoration: none;
+    color: var(--lightgray);
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+}
+
